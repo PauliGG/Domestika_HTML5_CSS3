@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .degradado {
+            background-color: red;
+
+            width: 600px;
+            height: 500px;
+            background: linear-gradient(90deg, red, blueviolet);
+
+
+            display: flex;
+            /*Para centrar elementos con flexbox*/
+            justify-content: center;
+            /* Horzontalmente */
+            align-items: center;
+            /*  Verticalmente*/
+            flex-direction: column;
+
+
+
+        }
+
+        .shadow1 {
+
+            width: 200px;
+            height: 100px;
+            color: white;
+            background: #8a2be2;
+            font-size: 3rem;
+            font-weight: bold;
+            border-radius: 40px;
+
+
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+
+            text-shadow: 0 0 5px #fff,
+                        0 0 5px hsl(323, 89%, 70%),
+                        0 0 20px hsl(323, 89%, 44%); 
+
+            display: flex;
+            /*Para centrar elementos con flexbox*/
+            justify-content: center;
+            /* Horzontalmente */
+            align-items: center;
+            /*  Verticalmente*/
+            cursor: pointer;
+        }
+
+        .shadow2 {
+
+
+            width: 200px;
+            height: 100px;
+            color: white;
+
+            font-size: 3rem;
+            font-weight: bold;
+            border-radius: 40px;
+
+            background: repeating-linear-gradient(45deg,
+                    pink, pink 35px, blueviolet 35px, blueviolet 70px);
+
+
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+            text-shadow: 4px 4px 0 #8a2be2;
+
+            display: flex;
+            /*Para centrar elementos con flexbox*/
+            justify-content: center;
+            /* Horzontalmente */
+            align-items: center;
+            /*  Verticalmente*/
+            cursor: pointer;
+        }
+
+        .shadow3 {
+
+
+            width: 200px;
+            height: 100px;
+            color: white;
+
+            font-size: 3rem;
+            font-weight: bold;
+            border-radius: 40px;
+
+            background:
+                radial-gradient(circle at 10% 20%, hsl(293, 100%, 70%), hsl(293, 100%, 30%));
+
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+            
+
+            display: flex;
+            /*Para centrar elementos con flexbox*/
+            justify-content: center;
+            /* Horzontalmente */
+            align-items: center;
+            /*  Verticalmente*/
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section style="background-color: blueviolet;">
+
+        <div class="degradado">
+
+            <div class="shadow1">
+                <p>Entrar</p>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="shadow2">
+                <p>Salir</p>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="shadow3">
+                <p>Salir</p>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+
+</html>
